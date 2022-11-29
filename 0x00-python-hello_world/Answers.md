@@ -1,0 +1,2 @@
+Task 0: python3 "$PYFILE"
+Task 1: python3 -c "$PYCODE"
