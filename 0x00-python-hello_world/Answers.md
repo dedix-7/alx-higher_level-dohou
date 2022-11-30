@@ -19,3 +19,11 @@ Task 5: print(str * 3)
 
 
 Task 6: str1 = str1 + " " + str2
+
+
+Task 7: word_first_3 = word[:3]
+	word_last_2 = word[-2:]
+	middle_word = word[1:-1]
+
+
+Task 8: str = str[39:67] + str[-22:-17] + str[:6]
