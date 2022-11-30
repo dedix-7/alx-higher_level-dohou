@@ -27,3 +27,6 @@ Task 7: word_first_3 = word[:3]
 
 
 Task 8: str = str[39:67] + str[-22:-17] + str[:6]
+
+
+Task 9: import this
