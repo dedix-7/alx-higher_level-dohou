@@ -39,3 +39,7 @@ Task 11: #!/usr/bin/python3
 
 
 ## echo $? tells us the exit status code
+
+
+
+Check other files to understand the answers
