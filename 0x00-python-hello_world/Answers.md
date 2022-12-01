@@ -30,3 +30,8 @@ Task 8: str = str[39:67] + str[-22:-17] + str[:6]
 
 
 Task 9: import this
+
+Task 11: #!/usr/bin/python3
+	import sys
+	sys.stderr.write("and that piece of art is useful - Dora Korpar, 2015-10-19\n")
+	exit(1)
