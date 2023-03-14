@@ -30,11 +30,23 @@ class Square:
         return (self.__size * self.__size)
 
     def __eq__(self, other):
-        """Define the == comparision to a Square."""
+        """
+        Define the == comparision to a Square. Returns a Boolean Value
+
+        The __eq__ operator in Python is a method for overloading the
+        default == operator, i.e. to define if two objects are equal.
+        It returns True if the objects are equal, and False if otherwise.
+        """
         return self.area() == other.area()
 
     def __ne__(self, other):
-        """Define the != comparison to a Square."""
+        """
+        Define the != comparison to a Square. Returns a Boolean Value
+        
+        The __ne__ operator in Python is a method for overloading the
+        default != operator, i.e to define if two objects are not equal.
+        It returns True if the objects are not equal, and False if otherwise.
+        """
         return self.area() != other.area()
 
     def __lt__(self, other):
