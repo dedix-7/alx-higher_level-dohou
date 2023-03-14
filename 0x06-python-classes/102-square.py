@@ -33,7 +33,7 @@ class Square:
         """
         Define the == comparision to a Square. Returns a Boolean Value
 
-        The __eq__ operator in Python is a method for overloading the 
+        The __eq__ operator in Python is a method for overloading the
         default == operator, i.e. to define if two objects are equal.
         It returns True if the objects are equal, and False if otherwise.
         """
