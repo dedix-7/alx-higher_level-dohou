@@ -7,40 +7,22 @@ module.exports = class Rectangle {
     }
   }
 
+  double () {
+    this.height = this.height * 2;
+    this.width = this.width * 2;
+  }
+
+  rotate () {
+    this.width = this.height;
+    this.height = this.width;
+  }
+
   print () {
     const H = this.height;
     const W = this.width;
     for (let dan = 0; dan < H; dan++) {
       let char = '';
       for (let fav = 0; fav < W; fav++) {
-        // console.log('X');
-        // process.stdout.write('X');
-        char = char + 'X';
-      }
-      console.log(char);
-    }
-  }
-
-  double () {
-    const H = this.height * 2;
-    const W = this.width * 2;
-    for (let dan = 0; dan < H; dan++) {
-      let char = '';
-      for (let fav = 0; fav < W; fav++) {
-        // console.log('X');
-        // process.stdout.write('X');
-        char = char + 'X';
-      }
-      console.log(char);
-    }
-  }
-
-  rotate () {
-    const H = this.height * 2;
-    const W = this.width * 2;
-    for (let fav = 0; fav < W; fav++) {
-      let char = '';
-      for (let dan = 0; dan < H; dan++) {
         // console.log('X');
         // process.stdout.write('X');
         char = char + 'X';
