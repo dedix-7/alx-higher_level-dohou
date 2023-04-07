@@ -4,7 +4,7 @@ exports.esrever = function (list) {
 
   // Do this the Hard Way!
   // Declaring variables
-  let myRevArray = [];
+  const myRevArray = [];
   let myArrObject;
   let arrNum = 0;
   const arrLen = list.length;
