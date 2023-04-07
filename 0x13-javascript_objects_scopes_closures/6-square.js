@@ -12,19 +12,20 @@ module.exports = class Square extends mySquare {
     /* if (arguments[0] === undefined) { super.print (); } */
     const H = this.height;
     const W = this.width;
-    if (c === 'C') {
-      for (let dan = 0; dan < H; dan++) {
-        let char = '';
-        for (let fav = 0; fav < W; fav++) {
-          char = char + c;
-        }
-        console.log(char);
-      }
-    } else {
+    if (c === undefined) {
       for (let dan = 0; dan < H; dan++) {
         let char = '';
         for (let fav = 0; fav < W; fav++) {
           char = char + 'X';
+        }
+        console.log(char);
+      }
+    } else {
+
+      for (let dan = 0; dan < H; dan++) {
+        let char = '';
+        for (let fav = 0; fav < W; fav++) {
+          char = char + c;
         }
         console.log(char);
       }
