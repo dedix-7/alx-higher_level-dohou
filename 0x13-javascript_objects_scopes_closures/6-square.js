@@ -21,7 +21,6 @@ module.exports = class Square extends mySquare {
         console.log(char);
       }
     } else {
-
       for (let dan = 0; dan < H; dan++) {
         let char = '';
         for (let fav = 0; fav < W; fav++) {
