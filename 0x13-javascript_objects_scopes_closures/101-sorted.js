@@ -6,7 +6,7 @@ const { dict } = require('./101-data.js');
 const userIdsByOccurrence = {};
 
 // Loop through the original dict object
-for (const userId in dict) {
+for (const userId in dict) { // userId represents the keys in dict
   // console.log(userId);
   const occurrence = dict[userId];
   // console.log(occurrences);
