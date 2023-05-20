@@ -1,5 +1,5 @@
 
-0t.txt module
+1-my_list.txt module
 ====================
 
 Importing the class from the module:
