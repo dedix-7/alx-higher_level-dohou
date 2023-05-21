@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-more class base
+Implementing a Rectangle + Area
 """
 
 
