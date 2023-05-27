@@ -1,12 +1,19 @@
 #!/usr/bin/python3
-"""Defines a class Student."""
+"""
+Module: student
+Defines the Student class
+"""
 
 
 class Student:
-    """Represent a student."""
+    """
+    Class representing a student.
+    """
 
     def __init__(self, first_name, last_name, age):
-        """Initialize a new Student.
+        """
+        Initializes a new instance of the Student class.
+
         Args:
             first_name (str): The first name of the student.
             last_name (str): The last name of the student.
@@ -17,21 +24,31 @@ class Student:
         self.age = age
 
     def to_json(self, attrs=None):
-        """Get a dictionary representation of the Student.
-        If attrs is a list of strings, represents only those attributes
-        included in the list.
-        Args:
-            attrs (list): (Optional) The attributes to represent.
         """
-        if (type(attrs) == list and
-                all(type(ele) == str for ele in attrs)):
-            return {k: getattr(self, k) for k in attrs if hasattr(self, k)}
-        return self.__dict__
+        Retrieves a dictionary representation of the Student instance.
+
+        Args:
+            attrs (list): A list of attribute names to be retrieved (default: None).
+                If provided, only the attributes in the list will be included in the dictionary.
+                If None, all attributes will be included.
+
+        Returns:
+            dict: A dictionary representation of the Student instance.
+        """
+        if attrs is None:
+            return self.__dict__
+        else:
+            return {attr: getattr(self, attr) for attr in attrs if hasattr(self, attr)}
 
     def reload_from_json(self, json):
-        """Replace all attributes of the Student.
-        Args:
-            json (dict): The key/value pairs to replace attributes with.
         """
-        for k, v in json.items():
-            setattr(self, k, v)
+        Replaces all attributes of the Student instance with the values from the provided dictionary.
+
+        Args:
+            json (dict): A dictionary containing attribute-value pairs.
+
+        Note:
+            This method assumes that the dictionary keys match the public attribute names of the Student instance.
+        """
+        for key, value in json.items():
+            setattr(self, key, value)
