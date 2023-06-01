@@ -51,10 +51,7 @@ class Rectangle(Base):
         """
             Setting private attribute
         """
-        if not isinstance(value, int):
-            raise TypeError("width must be an integer")
-        if value <= 0:
-            raise ValueError("width must be > 0")
+        self.setter_validation("width", value)
         self.__width = value
 
     @height.setter
@@ -62,10 +59,7 @@ class Rectangle(Base):
         """
             Setting private attribute
         """
-        if not isinstance(value, int):
-            raise TypeError("height must be an integer")
-        if value <= 0:
-            return ValueError("height must be > 0")
+        self.setter_validation("height", value)
         self.__height = value
 
     @x.setter
@@ -73,10 +67,7 @@ class Rectangle(Base):
         """
         Setting private attributes
         """
-        if not isinstance(value, int):
-            raise TypeError("x must be an integer")
-        if value < 0:
-            raise ValueError("x must be >= 0")
+        self.setter_validation("x", value)
         self.__x = value
 
     @y.setter
@@ -84,10 +75,7 @@ class Rectangle(Base):
         """
             Setting private attribute
         """
-        if not isinstance(value, int):
-            raise TypeError("y must be an integer")
-        if value < 0:
-            raise ValueError("y must be >= 0")
+        self.setter_validation("y", value)
         self.__y = value
 
     def area(self):
