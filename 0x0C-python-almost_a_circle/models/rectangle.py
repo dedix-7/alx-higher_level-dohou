@@ -1,16 +1,15 @@
 #!/usr/bin/python3
-'''
-    Class Rectangle
-'''
+"""
+Class Rectangle
+"""
 from models.base import Base
 
 
 class Rectangle(Base):
-    '''
-        Defining the Rectangle class
-        Inherits from:
-            Base
-    '''
+    """
+        Representing the Rectangle class
+        Inherits from the Base class
+    """
 
     def __init__(self, width, height, x=0, y=0, id=None):
         self.width = width
