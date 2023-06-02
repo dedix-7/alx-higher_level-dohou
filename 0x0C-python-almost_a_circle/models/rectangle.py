@@ -85,9 +85,13 @@ class Rectangle(Base):
         return (self.height * self.width)
 
     def display(self):
-        '''
+        """
             Prints to stdout the representation of the rectangle
-        '''
+        """
+        # We handled for x and y here
+        # self.x handles the horizontal position of the rectangle
+        # self.y handles the vertical position of the rectangle
+        # The default values for x and y are zero (in __init__ method)
         rectangle = ""
         print("\n" * self.y, end="")
         for i in range(self.height):
