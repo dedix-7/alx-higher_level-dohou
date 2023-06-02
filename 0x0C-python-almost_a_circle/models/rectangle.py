@@ -137,6 +137,7 @@ class Rectangle(Base):
 
     @staticmethod
     def setter_validation(attribute, value):
+        """ The setter_validation function """
         if type(value) != int:
             raise TypeError("{} must be an integer".format(attribute))
         if attribute == "x" or attribute == "y":
