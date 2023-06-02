@@ -92,7 +92,7 @@ class Rectangle(Base):
         # self.x handles the horizontal position of the rectangle
         # self.y handles the vertical position of the rectangle
         # The default values for x and y are zero (in __init__ method)
-        
+
         # Create an empty string
         rectangle = ""
 
@@ -142,7 +142,8 @@ class Rectangle(Base):
         if type(value) != int:
             raise TypeError("{} must be an integer".format(attribute))
 
-        # Checking if attribute == x or attribute == y and value is greater than 0
+        # Checking if attribute == x or attribute == y
+        # and if value is greater than 0
         if attribute == "x" or attribute == "y":
             if value < 0:
                 raise ValueError("{} must be >= 0".format(attribute))
