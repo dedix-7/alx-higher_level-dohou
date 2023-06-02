@@ -138,8 +138,11 @@ class Rectangle(Base):
     @staticmethod
     def setter_validation(attribute, value):
         """ The setter_validation function """
+        # Checking if value is an integer
         if type(value) != int:
             raise TypeError("{} must be an integer".format(attribute))
+
+        # Checking if attribute == x or attribute == y and value is greater than 0
         if attribute == "x" or attribute == "y":
             if value < 0:
                 raise ValueError("{} must be >= 0".format(attribute))
@@ -147,9 +150,9 @@ class Rectangle(Base):
             raise ValueError("{} must be > 0".format(attribute))
 
     def __str__(self):
-        '''
+        """
             Overwritting the str method
-        '''
+        """
         return "[{}] ({}) {}/{} - {}/{}".format(self.__class__.__name__,
                                                 self.id, self.x, self.y,
                                                 self.width, self.height)
