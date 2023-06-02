@@ -126,9 +126,9 @@ class Rectangle(Base):
             pass
 
     def to_dictionary(self):
-        '''
+        """
             Returns a dictionary representation of this class
-        '''
+        """
         return {'x': getattr(self, "x"),
                 'y': getattr(self, "y"),
                 'id': getattr(self, "id"),
