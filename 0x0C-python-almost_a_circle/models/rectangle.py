@@ -106,9 +106,9 @@ class Rectangle(Base):
         print(rectangle, end="")
 
     def update(self, *args, **kwargs):
-        '''
+        """
             Updates the arguments in the class
-        '''
+        """
         if len(args) == 0:
             for key, val in kwargs.items():
                 self.__setattr__(key, val)
