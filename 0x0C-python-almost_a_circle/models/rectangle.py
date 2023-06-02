@@ -110,8 +110,11 @@ class Rectangle(Base):
             Updates the arguments in the class
         """
         if len(args) == 0:
-            for key, val in kwargs.items():
-                self.__setattr__(key, val)
+            for key, value in kwargs.items():
+                # setattr(self, key, value)
+                self.__setattr__(key, value)
+        else:
+            # If args is not empty
             return
         try:
             self.id = args[0]
