@@ -141,4 +141,4 @@ class Rectangle(Base):
         '''
         return "[{}] ({}) {}/{} - {}/{}".format(self.__class__.__name__,
                                                 self.id, self.x, self.y,
-                                                       self.width, self.height)
+                                                self.width, self.height)
