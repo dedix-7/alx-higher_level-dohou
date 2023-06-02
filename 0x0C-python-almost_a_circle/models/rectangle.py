@@ -92,10 +92,17 @@ class Rectangle(Base):
         # self.x handles the horizontal position of the rectangle
         # self.y handles the vertical position of the rectangle
         # The default values for x and y are zero (in __init__ method)
+        
+        # Create an empty string
         rectangle = ""
+
+        # Printing the empty space for y
         print("\n" * self.y, end="")
+
         for i in range(self.height):
+            # Printing the empty space in front of '#' for x
             rectangle += (" " * self.x) + ("#" * self.width) + "\n"
+
         print(rectangle, end="")
 
     def update(self, *args, **kwargs):
