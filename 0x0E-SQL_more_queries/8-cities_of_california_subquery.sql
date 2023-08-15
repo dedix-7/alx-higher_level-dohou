@@ -4,6 +4,6 @@
 -- You are not allowed to use the JOIN keyword
 -- The database name will be passed as an argument of the mysql command
 -- Use the database first
-USE hbtn_0d_usa;
+-- USE hbtn_0d_usa;
 -- Get all the cities of California in the database
 SELECT id, name FROM cities WHERE state_id = (SELECT id FROM states WHERE name = 'California') ORDER BY id ASC;
