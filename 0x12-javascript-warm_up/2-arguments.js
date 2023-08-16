@@ -9,10 +9,10 @@
  * You are not allowed to use var
  */
 const cmdLineArg = process.argv.length - 2;
-if (cmdLineArg == 0) {
+if (cmdLineArg === 0) {
   console.log('No argument');
-} else if (cmdLineArg == 1) {
-    console.log('Argument found');
+} else if (cmdLineArg === 1) {
+  console.log('Argument found');
 } else {
-    console.log('Arguments found');
+  console.log('Arguments found');
 }
