@@ -6,10 +6,10 @@
 // You are not allowed to use var
 // You are not allowed to use try/catch
 const num = process.argv[2]; // Storing first argument
-const int_num = Number(num); // Typecasting to a number
-const my_num = Math.floor(int_num); // Rounding off the value of argument
-if (isNaN(my_num) === true) {
+const intNum = Number(num); // Typecasting to a number
+const myNum = Math.floor(intNum); // Rounding off the value of argument
+if (isNaN(myNum) === true) {
   console.log('Not a number');
 } else {
-  console.log(`My number: ${my_num}`);
+  console.log(`My number: ${myNum}`);
 }
