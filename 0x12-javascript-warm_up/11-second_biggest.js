@@ -12,6 +12,6 @@ if (process.argv.length <= 3) {
 } else {
   // Implementing my solution using an array
   // Storing only the arguments in an array and typecasting them to numbers
-  let myArray = process.argv.map(Number).slice(2, process.argv.length).sort((a, b) => a - b); // Sorting and typecasting the numbers
+  const myArray = process.argv.map(Number).slice(2, process.argv.length).sort((a, b) => a - b); // Sorting and typecasting the numbers
   console.log(myArray[myArray.length - 2]); // Returns the second biggest number.
 }
