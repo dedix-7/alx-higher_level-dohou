@@ -1,11 +1,6 @@
 #!/usr/bin/node
-// A function that returns the reversed version of a list:
-// Prototype: exports.esrever = function (list)
-// You are not allow to use the built-in method reverse
-/
 exports.esrever = function (list) {
-  // The easy way - 
-  // return list.reverse();
+  // The easy way -return list.reverse();
 
   // Do this the Hard Way!
   // Declaring variables
