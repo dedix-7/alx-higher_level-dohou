@@ -1,7 +1,7 @@
 ## Higher Level Programming
 
 In this repository, I learn how to write Bash scripts, code and build in Python, JavaScript, and other languages for higher-level programming.
-With my <bold>ALX Software Engineering Program</bold>, I am currently expanding my programming skills by studying higher-level programming.
+With my <strong>ALX Software Engineering Program</strong>, I am currently expanding my programming skills by studying higher-level programming.
 
 Here are a list of concepts covered in this repository:
 + Python - Hello World.
