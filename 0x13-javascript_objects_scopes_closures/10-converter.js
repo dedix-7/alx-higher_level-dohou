@@ -7,5 +7,6 @@
 exports.converter = function (base) {
   return function (myNum) {
     return myNum.toString(base); // Returns a string representation of an object
+    // The toString method returns a string representation of an object
   };
 };
