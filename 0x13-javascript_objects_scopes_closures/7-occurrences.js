@@ -1,4 +1,7 @@
 #!/usr/bin/node
+// A function that returns the number of occurrences in a list:
+// Prototype: exports.nbOccurences = function (list, searchElement)
+
 exports.nbOccurences = function (list, searchElement) {
   // Initializing my counter to count occurrences
   let myOccur = 0;
@@ -11,7 +14,6 @@ exports.nbOccurences = function (list, searchElement) {
       myOccur++;
     }
   }
-
   // return statement
   return myOccur;
 };
