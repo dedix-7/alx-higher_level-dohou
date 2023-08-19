@@ -14,6 +14,7 @@ module.exports = class Rectangle {
     }
   }
 
+  // The print instance method
   print () {
     const H = this.height;
     const W = this.width;
