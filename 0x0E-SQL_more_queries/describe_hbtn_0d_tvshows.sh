@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+# A Bash script that describes everything about the hbtn_0d_tvshows database
+
+echo "" ; echo "Showing tables in the database hbtn_0d_tvshows" ; echo "" ; echo 'SHOW TABLES;' | mysql -hlocalhost -uroot -p hbtn_0d_tvshows ; echo "" ; echo "tv_genres - Description" ; echo 'SELECT * FROM tv_genres;' | mysql -hlocalhost -uroot -p hbtn_0d_tvshows ; echo "" ; echo "tv_show_genres - Description" ; echo 'SELECT * FROM tv_show_genres;' | mysql -hlocalhost -uroot -p hbtn_0d_tvshows ; echo "" ; echo "tv_show - Description" ; echo 'SELECT * FROM tv_shows;' | mysql -hlocalhost -uroot -p hbtn_0d_tvshows
