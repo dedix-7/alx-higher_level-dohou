@@ -3,9 +3,9 @@
 -- Results must be sorted in descending order by their rating
 -- You can use only one SELECT statement
 -- The database name will be passed as an argument of the mysql command
-SELECT tv_genres.name, SUM(tv_shows_rate.rating) AS rating_sum
+SELECT tv_genres.name, SUM(tv_shows_rate.rating) AS rating
 FROM tv_genres
 INNER JOIN tv_show_genres ON tv_genres.id = tv_show_genres.genre_id
 INNER JOIN tv_shows_ratings ON tv_show_genres.show_id = tv_shows_ratings.show_id
-GROUP BY tv_genres.id
-ORDER BY rating_sum DESC;
+GROUP BY tv_genres.name
+ORDER BY rating DESC;
