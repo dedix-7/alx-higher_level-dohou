@@ -24,7 +24,7 @@ if __name__ == '__main__':
 
     # Executing statement
     cursor = myDB.cursor()
-    cursor.execute("SELECT * FROM states")
+    cursor.execute("SELECT * FROM states ORDER BY states.id ASC")
 
     # Returning results
     results = cursor.fetchall()
