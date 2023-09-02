@@ -16,9 +16,6 @@ Your code should not be executed when imported
 
 import MySQLdb
 from sys import argv
-# Using parametized queries, to ensure that user input is
-# treated as data and not executable SQL.
-# from sqlalchemy.sql import text
 
 if __name__ == '__main__':
     """
@@ -41,7 +38,6 @@ if __name__ == '__main__':
     cursor = myDB.cursor()
     query = ("SELECT * FROM states WHERE name=%s ORDER BY states.id ASC")
     cursor.execute(query, (state_name,))
-    # Add 'BINARY' keyword for case sensitivity.
 
     # Returning results
     results = cursor.fetchall()
