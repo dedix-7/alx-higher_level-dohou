@@ -37,6 +37,11 @@ if __name__ == '__main__':
     for row in results:
         print(row)
 
+    # Closing the cursor and the database connection
+    cursor.close()
+    myDB.close()
+
+
 """
 # Import statements
 import sys
