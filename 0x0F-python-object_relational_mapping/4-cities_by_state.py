@@ -2,7 +2,8 @@
 
 """
 A Python script that  lists all cities from the database hbtn_0e_4_usa
-Your script should take 3 arguments: mysql username, mysql password and database name
+Your script should take 3 arguments: mysql username,
+mysql password and database name
 You must use the module MySQLdb (import MySQLdb)
 Your script should connect to a MySQL server running on localhost at port 3306
 Results must be sorted in ascending order by cities.id
@@ -34,8 +35,7 @@ if __name__ == '__main__':
     cursor = myDB.cursor()
     query = ("SELECT cities.id, cities.name, states.name \
             FROM cities JOIN states ON cities.id = states.id \
-            ORDER BY states.id ASC"
-            )
+            ORDER BY cities.id ASC")
     cursor.execute(query)
 
     # Returning results
