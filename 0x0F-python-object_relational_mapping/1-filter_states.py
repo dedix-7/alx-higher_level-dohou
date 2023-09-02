@@ -33,9 +33,10 @@ if __name__ == '__main__':
 
     # Executing statement
     cursor = myDB.cursor()
-    cursor.execute("""SELECT * FROM states WHERE name LIKE 'N%'
+    cursor.execute("""SELECT * FROM states WHERE name LIKE BINARY 'N%'
                    ORDER BY states.id ASC"""
                    )
+    # Add 'BINARY' keyword for case sensitivity.
 
     # Returning results
     results = cursor.fetchall()
