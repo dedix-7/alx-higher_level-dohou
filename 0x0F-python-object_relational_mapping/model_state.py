@@ -18,9 +18,11 @@ calling Base.metadata.create_all(engine)
 """
 
 # Import statements
-from sys import argv
-from sqlalchemy import create_engine, String, Integer, Column, ForeignKey
-from sqlalchemy.orm import declarative_base, sessionmaker
+# from sys import argv
+# from sqlalchemy import create_engine, ForeignKey
+# from sqlalchemy.orm import declarative_base, sessionmaker
+from sqlalchemy import String, Integer, Column
+from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
 
@@ -57,6 +59,6 @@ port = 3306
 engine = create_engine("mysql+mysqldb://{}:{}@localhost:\
         {}/{}".format(username, password, port, database), echo=True)
 Base.metadata.create_all(engine)    # Creates the State table
-Session = sessionmaker(bind=engine)
-session = Session()
+# Session = sessionmaker(bind=engine)
+# session = Session()
 """
