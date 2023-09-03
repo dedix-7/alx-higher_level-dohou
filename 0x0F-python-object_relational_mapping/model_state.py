@@ -37,7 +37,7 @@ class State(Base):
         self.id = id
         self.name = name
 
-
+"""
 # Storing input from standard input
 username = argv[1]
 password = argv[2]
@@ -49,3 +49,4 @@ engine = create_engine("mysql+mysqldb://{}:{}@localhost:{}/{}".format(username, 
 Base.metadata.create_all(engine)    # Creates the State table
 Session = sessionmaker(bind=engine)
 session = Session()
+"""
