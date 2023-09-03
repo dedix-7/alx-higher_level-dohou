@@ -37,7 +37,8 @@ class State(Base):
         and can’t be null
     """
     __tablename__ = "states"    # Linking the State class to the states table.
-    id = Column(Integer, primary_key=True, autoincrement=True, nullable=False)
+    # id = Column(Integer, primary_key=True, autoincrement=True, nullable=False)
+    id = Column (Integer, primary_key=True)
     name = Column(String(128), nullable=False)
 
     def __init__(self, id, name):
