@@ -42,8 +42,9 @@ if __name__ == "__main__":
     session = Session()
 
     # Querying and printing the first States object
-    result = session.query(State).order_by(asc(State.id))[:1]
+    result = session.query(State).order_by(asc(State.id)).first()
     """
+    result = session.query(State).order_by(asc(State.id))[:1]
     The line of code above is a Python list slicing syntax
     in the context of SQLAlchemy queries, it translates to SQL's LIMIT
     This statement will fetch only the first result
@@ -53,7 +54,7 @@ if __name__ == "__main__":
     if you're fetching a single item, the result will still be in
     a list format with that one item.
     We can also implement the code above in one line:
-    # result = session.query(State).order_by(asc(State.id)).first()
+    result = session.query(State).order_by(asc(State.id)).first()
     """
     if result:
         print("{}: {}".format(result[0].id, result[0].name))
