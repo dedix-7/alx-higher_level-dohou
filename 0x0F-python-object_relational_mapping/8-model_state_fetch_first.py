@@ -20,7 +20,7 @@ Your code should not be executed when imported
 """
 
 from sys import argv
-from sqlalchemy import create_engine, asc
+from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from model_state import Base, State
 
