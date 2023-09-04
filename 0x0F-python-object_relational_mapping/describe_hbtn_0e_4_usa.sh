@@ -10,3 +10,5 @@ echo ""
 echo "Describing the 'states' table"
 echo "SELECT * FROM states;" | mysql -hlocalhost -uroot -p hbtn_0e_4_usa
 echo ""
+echo -e "To update the database README file, run this command:\n\n $ ./update_description.sh\n"
+echo ""
