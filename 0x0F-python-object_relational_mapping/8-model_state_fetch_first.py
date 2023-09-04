@@ -42,7 +42,7 @@ if __name__ == "__main__":
     session = Session()
 
     # Querying and printing the first States object
-    result = session.query(State).order_by(asc(State.id)).first()
+    result = session.query(State).order_by(State.id).first()
     """
     result = session.query(State).order_by(asc(State.id))[:1]
     The line of code above is a Python list slicing syntax
@@ -57,7 +57,7 @@ if __name__ == "__main__":
     result = session.query(State).order_by(asc(State.id)).first()
     """
     if result:
-        print("{}: {}".format(result[0].id, result[0].name))
+        print("{}: {}".format(result.id, result.name))
     else:
         print("Nothing\n")
 
