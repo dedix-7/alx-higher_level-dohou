@@ -21,3 +21,4 @@ Here are a list of concepts covered in this repository:
 + SQL - More Queries
 + JavaScript - Warm Up
 + JavaScript - Objects, Scopes And Closures
++ Object Relational Mapping - Python, SQLAlchemy, MySQLdb
