@@ -1,3 +1,0 @@
-1
-
-# Check https://github.com/dohoudaniel/A-Beautiful-Mind/blob/main/Software-Engineering/Python/ALX/alx-higher_level_programming/0x09-python-everything_is_object/16-answer.txt for more explanation.
