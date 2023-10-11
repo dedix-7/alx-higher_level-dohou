@@ -1,4 +1,9 @@
 #!/usr/bin/python3
 str = "Holberton School"
-print(str*3)
-print(str[:9])
+for i in range(3):
+    print(str, end="")
+print()
+answer = str[0:9]
+print(answer)
+# print(str*3)
+# print(str[:9])
