@@ -8,5 +8,5 @@ for i in range(97, 123):
     #     print("{:c}".format(i), end="")
     # while i != 101 and i != 113:
     #     print("{:c}".format(i), end="")
-    if i != 113 and i != 103:
+    if i != 113 and i != 101:
         print("{:c}".format(i), end="")
