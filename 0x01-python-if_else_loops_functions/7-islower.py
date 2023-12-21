@@ -4,11 +4,8 @@ def islower(c):
     A function that checks if its argument is in
     lowercase or uppercase
     """
-    if len(c) == 1:
-        ascii_value = ord(c)
-        if ascii_value >= 97 and ascii_value <= 122:
-            return True
-        else:
-            return False
+    ascii_value = ord(c)
+    if ascii_value >= 97 and ascii_value <= 122:
+        return True
     else:
-        pass
+        return False
