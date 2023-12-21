@@ -6,7 +6,7 @@ def islower(c):
     """
     if len(c) == 1:
         ascii_value = ord(c)
-        if 97 <= ascii_value <= 122:
+        if ascii_value >= 97 and ascii_value <= 122:
             return True
         else:
             return False
