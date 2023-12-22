@@ -10,3 +10,14 @@ def print_last_digit(number):
     last_number = int(last_letter)
     print("{}".format(last_number), end="")
     return last_number
+    """
+    This code works very efficiently, but
+    using modulo (%) to return the last digits
+    of numbers is much more efficient:
+    if number >= 0:
+        myNumber = number % 10
+    else:
+        myNumber = abs(number % 10)
+    print("{}".format(last_number), end="")
+    return last_number
+    """
