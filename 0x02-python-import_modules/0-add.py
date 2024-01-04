@@ -4,13 +4,15 @@ A Program that inports the function add
 from a file add_0.py and prints the result
 of the addition of 1 and 2
 """
+
 if __name__ == "__main__":
+
     from add_0 import add
-    
+
     # Define variables
     a = 1
     b = 2
-    
+
     # Typecasting
     a = int(a)
     b = int(b)
