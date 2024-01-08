@@ -8,7 +8,7 @@ def replace_in_list(my_list, idx, element):
         my_list: The list to be used
         idx: Index to be replaced
         element: The element to be at my_list[idx]
-    
+
     Return:
         my_list with my_list[idx] = element
     """
