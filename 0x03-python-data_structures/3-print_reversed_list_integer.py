@@ -10,6 +10,6 @@ def print_reversed_list_integer(my_list=[]):
         pass
     else:
         reversed_list = my_list[::-1]
-        length_reversed = len(reversed_list):
+        length_reversed = len(reversed_list)
         for i in range(length_reversed):
             print("{:d}".format(reversed_list[i]))
