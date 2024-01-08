@@ -9,7 +9,7 @@ def element_at(my_list, idx):
         idx: the index to be returned
     """
     length = len(my_list) - 1
-    if idx not in range(length):
+    if idx > length:
         return None
     elif idx < 0:
         return None
