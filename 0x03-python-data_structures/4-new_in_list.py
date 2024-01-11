@@ -10,12 +10,12 @@ def new_in_list(my_list, idx, element):
         idx: Index of element to be altered
         element: Element to be altered
     """
-    length = len(my_list) - 1
+    new_list = my_list[:]
+    length = len(new_list) - 1
     if idx < 0:
-        return copy(my_list)
+        return new_list
     elif idx > length:
-        return copy(my_list)
+        return new_list
     else:
-        new_list = my_list[:]
         new_list[idx] = element
     return new_list
