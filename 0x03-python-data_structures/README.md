@@ -11,3 +11,5 @@
 <li>Interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.5)</li>
 <li>Pycodestyle checked.</li>
 </ul>
+
+<p align="center">I stopped revisiting this ALX SE project today (11:51 PM 11th January 2024). I shall recomplete then when I have the time to.</p>
