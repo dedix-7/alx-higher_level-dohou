@@ -2,7 +2,7 @@
 """
 A Python function that ceates
 a copy of a string, and removes
-a chatacter at the position n
+a character at the position n
 using indexes
 """
 
