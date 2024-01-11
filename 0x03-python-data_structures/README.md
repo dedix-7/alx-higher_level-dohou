@@ -1,4 +1,4 @@
-<h3 align="center">Import & Modules</h3>
+<h3 align="center">Data Structures: Lists, Tuples</h3>
 <p align="center">In this repository, I solve projects and tasks in Python relating to data structures and algorithms:
 <ul>
 <li>Lists</li>
