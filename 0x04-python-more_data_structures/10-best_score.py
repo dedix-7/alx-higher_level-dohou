@@ -9,7 +9,7 @@ def best_score(a_dictionary):
     if not a_dictionary:
         return None
     else:
-        max_key = None
+        # max_key = None
         values_list = list(a_dictionary.values())
         max_value = values_list[0]
         # Using a loop to get the highest value, thus the key
