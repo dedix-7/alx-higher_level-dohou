@@ -15,4 +15,3 @@ def uniq_add(my_list=[]):
     for i in range(len(unique)):
         sum += unique[i]
     return sum
-
