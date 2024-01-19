@@ -9,10 +9,9 @@ def weight_average(my_list=[]):
     """
     if not my_list:
         return None
-    else:
-        product = 0
-        total_sum = 0
-        for i in my_list:
-            product += i[0] * i[1]
-            total_sum += i[1]
+    product = 0
+    total_sum = 0
+    for i in my_list:
+        product += i[0] * i[1]
+        total_sum += i[1]
     return (product / total_sum)
