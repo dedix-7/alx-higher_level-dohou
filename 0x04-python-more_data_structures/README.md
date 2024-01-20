@@ -11,3 +11,9 @@
 <li>Interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.5)</li>
 <li>Pycodestyle checked.</li>
 </ul>
+<br>
+<p align="center">The following tasks on the intranet need to be revisited. Do revisit them at the right time:</p>
+<ul>
+<li>Task 12</li>
+<li>Task 16</li>
+</ul>
