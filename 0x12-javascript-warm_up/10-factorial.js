@@ -1,12 +1,10 @@
 #!/usr/bin/node
-const firstArg = process.argv[2];
-let answer = 0;
-let i = -1;
-if (firstArg === undefined || isNaN(firstArg) === true) {
-  console.log(1);
-} else {
-  for (i = 0; i <= firstArg; i++) {
-    answer += i;
+function factorial (a) {
+  if (a === undefined || isNaN(a) === true || a === 1) {
+    return 1;
+  } else {
+    // Calling the factorial function recursively, like in C
+    return a * factorial(a - 1);
   }
-  console.log(answer);
 }
+console.log(factorial(Math.floor(Number(process.argv[2]))));
