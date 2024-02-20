@@ -8,5 +8,5 @@ function add (a, b) {
     return a + b;
   }
 }
-trial = add(process.argv[2], process.argv[3]);
+trial = add(Math.floor(Number(process.argv[2])), Math.floor(Number(process.argv[3])));
 console.log(trial);
