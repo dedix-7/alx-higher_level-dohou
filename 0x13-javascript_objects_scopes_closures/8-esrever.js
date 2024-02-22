@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/node
 exports.esrever = function (list) {
   const listLength = list.length;
   let indexNumber = 0;
