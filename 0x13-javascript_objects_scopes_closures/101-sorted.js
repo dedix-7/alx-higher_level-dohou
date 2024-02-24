@@ -17,7 +17,7 @@ for (const key in dict) {
   const value = dict[key];
   // Initialize an empty array if the value is not a key in the new dictionary
   if (!sortedKeysByValues[value]) {
-    sortedKeysByValues[value] = [] // Initialize an empty array
+    sortedKeysByValues[value] = []; // Initialize an empty array
   }
   sortedKeysByValues[value].push(parseInt(key));
 }
