@@ -10,9 +10,12 @@ with urllib.request.urlopen(my_url) as my_response:
         # print(type(my_response.read()))
         print(
             "Body response:\n"
-            "    - type: {}\n"
-            "    - content: {}\n"
-            "    - utf8 content: {}".format(
+            "\t- type: {}\n"
+            "\t- content: {}\n"
+            "\t- utf8 content: {}".format(
                 type(read_response),
                 read_response,
                 read_response.decode('utf-8')))
+# In Python, \t represents the escape sequence for a horizontal tab character.
+# When used within a string, \t inserts a tab character, which typically moves
+# the cursor to the next tab stop.
