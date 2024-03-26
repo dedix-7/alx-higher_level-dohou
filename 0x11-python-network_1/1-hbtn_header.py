@@ -11,7 +11,10 @@ import sys
 
 if __name__ == "__main__":
     my_url = str(sys.argv[1])
-    with urllib.request.urlopen(my_url) as my_response:
+    # Create a Request object that can be sent to the URL's server
+    my_request = urllib.request.Request(my_url)
+    with urllib.request.urlopen(my_request) as my_response:
         if "X-Request-Id" in my_response.headers:
-            x_request_id_body = my_response.headers.get("X-Request-Id")
+            # Convert to a dict so as to be able to use the get method
+            x_request_id_body = dict(my_response.headers).get("X-Request-Id")
             print(x_request_id_body)
