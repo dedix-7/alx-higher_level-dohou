@@ -24,6 +24,7 @@ if __name__ == "__main__":
     # Set up Basic Authentication using my username and PAT
     # I commented my code because of TypeError:
     # Error: TypeError: Cannot mix str and non-str arguments
+    # I had to rename all my variables for it to work
     #
     auth = HTTPBasicAuth(sys.argv[1], sys.argv[2])
     # Sending a GET request to the GitHub API
