@@ -35,3 +35,5 @@ if __name__ == "__main__":
         info = response.json()
         # Now, to print my GitHub ID
         print("{}".format(info.get("id")))
+    else:
+        print("None")
