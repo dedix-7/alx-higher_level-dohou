@@ -19,7 +19,12 @@ if __name__ == "__main__":
     my_url = str(sys.argv[1])
     with urllib.request.urlopen(my_url) as my_response:
         try:
-            read_response = my_response.read()
-            print(read_response)
+            with urllib.request.urlopen(my_url) as my_response:
+                read_response = my_response.read()
+                print(read_response.decode('utf-8'))
         except urllib.error.HTTPError as e:
+            # Made edits to this code to account for the error code 401
+            # The HTTP error code 401 means 'Authentication required'
+            # if e.code == 401:
+            #     print("Error code: {}".format(e.code))
             print("Error code: {}".format(e.code))
