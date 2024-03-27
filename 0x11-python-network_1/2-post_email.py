@@ -3,7 +3,7 @@
 A Python script that that takes in a  URL and an email, sends a POST request
 to the passed URL with the email as a parameter, and displays the body of the
 response (decoded in utf-8)
-Usage: ./1-hbtn_header.py <URL> <email>
+Usage: ./2-post_email.py <URL> <email>
 """
 import urllib.request
 import urllib.parse
