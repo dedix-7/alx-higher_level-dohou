@@ -23,7 +23,7 @@ if __name__ == "__main__":
     my_request = requests.post(my_url, my_payload)
     try:
         my_response = my_request.json()
-        if my_response = {}:
+        if my_response == {}:
             print("No result")
         else:
             print(
