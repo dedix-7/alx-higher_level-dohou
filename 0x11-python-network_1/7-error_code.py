@@ -15,8 +15,8 @@ import requests
 
 if __name__ == "__main__":
     my_url = str(sys.argv[1])
-    try:
-        with requests.get(my_url) as my_response:
+    with requests.get(my_url) as my_response:
+        if my_response.status_code == 200:
             print(my_response.text)
-    except urllib.error.HTTPError as e:
-        print("Error code: {}".format(e.status_code))
+        else:
+            print("Error code: {}".format(e.status_code))
