@@ -19,4 +19,4 @@ if __name__ == "__main__":
         if my_response.status_code == 200:
             print(my_response.text)
         else:
-            print("Error code: {}".format(e.status_code))
+            print("Error code: {}".format(my_response.status_code))
