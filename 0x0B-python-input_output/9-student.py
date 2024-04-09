@@ -20,6 +20,7 @@ class Student:
     def to_json(self):
         """
         Method: to_json
-        Returns a dictionary representation of the instance of the class, Student
+        Returns a dictionary representation
+        of the instance of the class, Student
         """
         return self.__dict__
