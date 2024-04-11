@@ -3,7 +3,7 @@ const request = require('request');
 // Making a GET request
 request.get(process.argv[2], (error, response, body) => {
   if (error) {
-    console.error;
+    console.error(error);
     return;
   }
 
