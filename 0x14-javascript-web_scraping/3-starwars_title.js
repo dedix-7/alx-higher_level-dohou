@@ -13,8 +13,7 @@ request.get(url, (error, response, body) => {
     console.error(error);
     return;
   }
-  const movie = JSON.parse(body)
+  const movie = JSON.parse(body);
   // Print the title of the movie
   console.log(movie.title);
 });
-
