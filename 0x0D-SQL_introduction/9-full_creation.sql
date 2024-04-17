@@ -1,8 +1,8 @@
 -- A script that creates a table 'second_table' in
--- the database 'hbtn_0c_0' in my MySQL server and
+-- the current database 'hbtn_0c_0' in my MySQL server and
 -- adds multiple rows.
--- The database name will be passed as an argument to the mysql command
--- If second_table already exists, this script does not fail
+-- The database name will be passed as an argument to the mysql command.
+-- If second_table already exists, this script does not fail.
 -- I am not allowed to use the SELECT and SHOW statements
 CREATE TABLE IF NOT EXISTS second_table (
        id INT,
