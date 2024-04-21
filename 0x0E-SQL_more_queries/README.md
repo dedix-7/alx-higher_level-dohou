@@ -1,4 +1,4 @@
-## 0x0E - SQL - More queries
+## 0x0E. SQL - More queries
 
 In this project, I learned a lot about Relational Database Management Systems (RDBMS) with MySQL. I also learned how to use MySQL queries and subqueries, and also the SQL Syntax Guide.
 <br>
