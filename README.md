@@ -17,8 +17,10 @@ Here are a list of concepts covered in this repository:
 + Python - Inheritance
 + Python - Input And Output
 + Python - Almost A Circle
++ Python - Object Relational Mapping (ORM) using Python, SQLAlchemy, MySQLdb
 + SQL - Introduction
 + SQL - More Queries
 + JavaScript - Warm Up
 + JavaScript - Objects, Scopes And Closures
-+ Object Relational Mapping - Python, SQLAlchemy, MySQLdb
++ JavaScript - Web Scrapping
++ Python - HTTP, HTTPS SSL Network
