@@ -20,3 +20,4 @@ Some of the concepts covered in this project are:
 	- `UPDATE`
 	- `DELETE`
 	- `DROP`
+- The `UTF8MB4` is an encoding that is capable of handling any unicode characters which is very important for properly supporting all languages and special characters.
