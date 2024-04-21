@@ -1,6 +1,6 @@
 -- A script that imports a table dump into a database 'hbtn_0c_0'
 -- and then display the average temperature (Farenheit) by city
--- ordered by temperature (descending)
+-- ordered by temperature (descending).
 -- USE hbtn_0c_0;
 -- SOURCE ./temperatures.sql;
 -- First command used:
