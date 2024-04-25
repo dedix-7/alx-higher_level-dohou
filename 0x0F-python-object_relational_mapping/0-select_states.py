@@ -67,6 +67,7 @@ engine = create_engine(db_url.format(user, password, database))
 Session = sessionmaker(bind=engine)
 session = Session()
 
+# Querying the results
 results = session.query().all()
 print(results)
 """
