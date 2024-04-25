@@ -3,15 +3,15 @@
 """
 A Python file that contains the class definition of a City
 and an instance Base = declarative_base():
-State class:
-inherits from Base
-links to the MySQL table cities
-class attribute id that represents a column of an auto-generated,
-unique integer, can’t be null and is a primary key
-class attribute name that represents a column of a string with
-maximum 128 characters and can’t be null
-class attribute state_id that represents a column of an integer,
-can’t be null and is a foreign key to states.id
+- State class:
+- inherits from Base
+- links to the MySQL table cities
+- class attribute id that represents a column of an auto-generated,
+- unique integer, can’t be null and is a primary key
+- class attribute name that represents a column of a string with
+- maximum 128 characters and can’t be null
+- class attribute state_id that represents a column of an integer,
+- can’t be null and is a foreign key to states.id
 You must use the module SQLAlchemy
 Your script should connect to a MySQL server running on localhost
 at port 3306
