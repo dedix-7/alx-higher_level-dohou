@@ -35,11 +35,11 @@ class City(Base):
     and links to the MySQL table cities
     Attributes:
         id: A column of an auto-generated, unique integer,
-        can’t be null and is a primary key
+        can’t be null and is a primary key.
         name: A column of a string with maximum 128 characters
-        and can’t be null
+        and can’t be null.
         states_id: A column of an integer, can’t be null and is a
-        foreign key to states.id
+        foreign key to states.id.
     """
     __tablename__ = 'cities'    # Linking the City class to the cities table.
     id = Column(Integer, primary_key=True)
